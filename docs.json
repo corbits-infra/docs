@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Corbits Dev",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#e98428",
+    "light": "#f7ead5",
+    "dark": "#7b9974"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/corbits_favicon.svg",
   "navigation": {
     "tabs": [
       {
