@@ -52,7 +52,47 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "x402 Merchants",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "x402 Clients",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "x402 Facilitator",
         "groups": [
           {
             "group": "API documentation",
@@ -75,14 +115,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Developer Guide",
           "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Blog",
+          "anchor": "API Guide",
           "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "icon": "book-open-cover"
         }
       ]
     }
