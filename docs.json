@@ -24,8 +24,7 @@
             "group": "First steps",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
