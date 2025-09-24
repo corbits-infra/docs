@@ -84,20 +84,20 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/corbits_light.svg",
+    "dark": "/logo/corbits_dark.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Home",
+        "href": "https://corbits.dev"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Support",
+      "href": "https://t.me/+aO1q2ZZZmXkxNzU5"
     }
   },
   "contextual": {
@@ -115,7 +115,7 @@
   "footer": {
     "socials": {
       "x": "https://x.com/corbits_dev",
-      "github": "https://github.com/mintlify",
+      "github": "https://github.com/faremeter",
       "linkedin": "https://www.linkedin.com/company/corbitsdev/"
     }
   }
