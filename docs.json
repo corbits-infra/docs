@@ -14,7 +14,7 @@
   "font": {
     "family": "Open Sans"
   },
-  "favicon": "/corbits_favicon.svg",
+  "favicon": "logo/corbits_favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -42,14 +42,6 @@
               "about-x402/buyers",
               "about-x402/sellers",
               "about-x402/facilitators"
-            ]
-          },
-          {
-            "group": "Capabilities",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
             ]
           }
         ]
@@ -108,30 +100,10 @@
       {
         "tab": "Model Context Protocol (MCP)",
         "pages": [
-              "agents-and-tools/mcp"
-            ]
-          },      
-      {
-        "tab": "Facilitators",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+          "agents-and-tools/mcp"
         ]
       },
-       {
+      {
         "tab": "Release notes",
         "groups": [
           {
@@ -177,15 +149,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
