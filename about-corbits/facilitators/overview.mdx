@@ -70,19 +70,20 @@ export const ModelId = ({children, style = {}}) => {
 
 <CardGroup cols={2}>
   <Card title="Faremeter 0.6.0" icon="trophy" href="/en/docs/about-claude/models/overview#model-comparison-table">
-    Our most powerful and capable model
+    Our flagship x402 implementation
 
-    - <Icon icon="inbox-in" iconType="thin" /> Text and image input
-    - <Icon icon="inbox-out" iconType="thin" /> Text output
-    - <Icon icon="book" iconType="thin" /> 200k context window
-    - <Icon icon="brain" iconType="thin" /> Superior reasoning capabilities
+    - <Icon icon="inbox-in" iconType="thin" /> Accept any form of payment
+    - <Icon icon="inbox-out" iconType="thin" /> Proxy any API in the world
+    - <Icon icon="book" iconType="thin" /> Simplest developer experience
+    - <Icon icon="brain" iconType="thin" /> Superior modularity and scalability
   </Card>
-  <Card title="Claude Sonnet 4" icon="star" href="/en/docs/about-claude/models/overview#model-comparison-table">
-    High-performance model with exceptional reasoning capabilities
+  <Card title="Coinbase x402" icon="star" href="/en/docs/about-claude/models/overview#model-comparison-table">
+    The first modern x402 implementation
 
-    - <Icon icon="inbox-in" iconType="thin" /> Text and image input
-    - <Icon icon="inbox-out" iconType="thin" /> Text output
-    - <Icon icon="book" iconType="thin" /> 200k context window (1M context beta available)
+    - <Icon icon="inbox-in" iconType="thin" /> Accept USDC payments on Base
+    - <Icon icon="inbox-out" iconType="thin" /> Utilize CDP Baazar for APIs
+    - <Icon icon="book" iconType="thin" /> Requires CDP API keys
+    - 
   </Card>
 </CardGroup>
 
@@ -94,10 +95,6 @@ export const ModelId = ({children, style = {}}) => {
 | ---------------- | --------------------------------------- |
 | Faremeter v0.1.0 | anthropic.claude-opus-4-1-20250805-v1:0 |
 | Coinbase x402    | anthropic.claude-opus-4-20250514-v1:0   |
-
-<Note>
-  Models with the same snapshot date (e.g., 20240620) are identical across all platforms and do not change. The snapshot date in the model name ensures consistency and allows developers to rely on stable performance across different environments.
-</Note>
 
 <Note>
   Opus 4.1 does not allow both `temperature` and `top_p` parameters to be specified. Please use only one.
@@ -140,17 +137,6 @@ To help you choose the right model for your needs, we've compiled a table compar
 | **Context window**                                                    | <Tooltip tip="~150K words \ ~680K unicode characters">200K</Tooltip>                                 | <Tooltip tip="~150K words \ ~680K unicode characters">200K</Tooltip>                                 | <Tooltip tip="~150K words \ ~680K unicode characters">200K</Tooltip> / <br /> 1M (beta)<sup>2</sup>   | <Tooltip tip="~150K words \ ~680K unicode characters">200K</Tooltip>                                  | <Tooltip tip="~150K words \ ~215K unicode characters">200K</Tooltip>                                   | <Tooltip tip="~150K words \ ~680K unicode characters">200K</Tooltip>                                 |
 | **Max output**                                                        | <Tooltip tip="~24K words \ 109K unicode characters \ ~50 single spaced pages">32000 tokens</Tooltip> | <Tooltip tip="~24K words \ 109K unicode characters \ ~50 single spaced pages">32000 tokens</Tooltip> | <Tooltip tip="~48K words \ 218K unicode characters \ ~100 single spaced pages">64000 tokens</Tooltip> | <Tooltip tip="~48K words \ 218K unicode characters \ ~100 single spaced pages">64000 tokens</Tooltip> | <Tooltip tip="~6.2K words \ 28K unicode characters \ ~12-13 single spaced pages">8192 tokens</Tooltip> | <Tooltip tip="~3.1K words \ 14K unicode characters \ ~6-7 single spaced pages">4096 tokens</Tooltip> |
 | **Training data cut-off**                                             | Mar 2025                                                                                             | Mar 2025                                                                                             | Mar 2025                                                                                              | Nov 2024<sup>1</sup>                                                                                  | July 2024                                                                                              | Aug 2023                                                                                             |
-
-_<sup>1 - While trained on publicly available information on the internet through November 2024, Claude Sonnet 3.7's knowledge cut-off date is the end of October 2024. This means the models' knowledge base is most extensive and reliable on information and events up to October 2024.</sup>_
-
-[[_`<sup>2 - Claude Sonnet 4 supports a 1M token context window when using the context-1m-2025-08-07 beta header. Long context pricing applies to requests exceeding 200K tokens.</sup>`_](/en/docs/about-claude/pricing#long-context-pricing)](/en/docs/build-with-claude/context-windows#1m-token-context-window)
-
-<Note>
-  Include the beta header `output-128k-2025-02-19` in your API request to increase the maximum output token length to 128k tokens for Claude Sonnet 3.7.
-
-  We strongly suggest using our [streaming Messages API](/en/docs/build-with-claude/streaming) to avoid timeouts when generating longer outputs.
-  See our guidance on [long requests](/en/api/errors#long-requests) for more details.
-</Note>
 
 ### Model pricing
 
