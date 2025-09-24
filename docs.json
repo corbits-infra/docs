@@ -55,6 +55,17 @@
         ]
       },
       {
+        "tab": "Faremeter",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "faremeter"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Merchants",
         "groups": [
           {
@@ -116,17 +127,6 @@
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Faremeter",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "faremeter"
             ]
           }
         ]
