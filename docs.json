@@ -4,11 +4,11 @@
   "name": "Corbits Dev",
   "colors": {
     "primary": "#e98428",
-    "light": "#E4D5BC",
+    "light": "#f7ead5",
     "dark": "#7b9974"
   },
   "background": {
-    "light": "f7ead5",
+    "light": "E4D5BC",
     "dark": "2b2627"
   },
   "font": {
