@@ -1,6 +1,6 @@
 ---
-title: "Facilitators overview"
-description: "Faremeter is a collection of libraries, tools, and applications designed to allow agents and other utilities to transparently make web3 payments using web2 infrastructure developed by ABK Labs. This guide introduces our implementation and compares its performance with other models."
+title: "Plugins overview"
+description: "Faremeter is a collection of libraries, tools, and applications designed to allow agents and other utilities to transparently make web3 payments using web2 infrastructure developed by ABK Labs. This guide introduces our implementation and compares its potential with other models."
 ---
 
 export const ModelId = ({children, style = {}}) => {
@@ -63,17 +63,13 @@ export const ModelId = ({children, style = {}}) => {
 };
 
 <Tip>
-  The next generation of Claude Models:\
-  \
-  
-  **Claude Opus 4.1** - Our most capable and intelligent model yet. Claude Opus 4.1 sets new standards in complex reasoning and advanced coding. [Learn more](https://www.anthropic.com/news/claude-opus-4-1).\
-  \
-  
-  **Claude Sonnet 4** - Our high-performance model with exceptional reasoning and efficiency. [Learn more](https://www.anthropic.com/news/claude-4).
+  The next generation of Faremeter tools:
+
+  **Faremeter v0.6.0** - The flagship x402 toolkit. Faremeter v0.6.0 sets the standard for adding new blockchains and APIs.
 </Tip>
 
 <CardGroup cols={2}>
-  <Card title="Claude Opus 4.1" icon="trophy" href="/en/docs/about-claude/models/overview#model-comparison-table">
+  <Card title="Faremeter 0.6.0" icon="trophy" href="/en/docs/about-claude/models/overview#model-comparison-table">
     Our most powerful and capable model
 
     - <Icon icon="inbox-in" iconType="thin" /> Text and image input
@@ -92,16 +88,12 @@ export const ModelId = ({children, style = {}}) => {
 
 ---
 
-## Model names
+## Implementation names
 
-| Model             | Claude API                                                | AWS Bedrock                               | GCP Vertex AI              |
-| ----------------- | --------------------------------------------------------- | ----------------------------------------- | -------------------------- |
-| Claude Opus 4.1   | claude-opus-4-1-20250805                                  | anthropic.claude-opus-4-1-20250805-v1:0   | claude-opus-4-1@20250805   |
-| Claude Opus 4     | claude-opus-4-20250514                                    | anthropic.claude-opus-4-20250514-v1:0     | claude-opus-4@20250514     |
-| Claude Sonnet 4   | claude-sonnet-4-20250514                                  | anthropic.claude-sonnet-4-20250514-v1:0   | claude-sonnet-4@20250514   |
-| Claude Sonnet 3.7 | claude-3-7-sonnet-20250219   (claude-3-7-sonnet-latest  ) | anthropic.claude-3-7-sonnet-20250219-v1:0 | claude-3-7-sonnet@20250219 |
-| Claude Haiku 3.5  | claude-3-5-haiku-20241022   (claude-3-5-haiku-latest  )   | anthropic.claude-3-5-haiku-20241022-v1:0  | claude-3-5-haiku@20241022  |
-| Claude Haiku 3    | claude-3-haiku-20240307                                   | anthropic.claude-3-haiku-20240307-v1:0    | claude-3-haiku@20240307    |
+| Implementation   | AWS Bedrock                             |
+| ---------------- | --------------------------------------- |
+| Faremeter v0.1.0 | anthropic.claude-opus-4-1-20250805-v1:0 |
+| Coinbase x402    | anthropic.claude-opus-4-20250514-v1:0   |
 
 <Note>
   Models with the same snapshot date (e.g., 20240620) are identical across all platforms and do not change. The snapshot date in the model name ensures consistency and allows developers to rely on stable performance across different environments.
@@ -193,7 +185,7 @@ In most cases, you can switch from Claude 3.7 models to Claude 4 models with min
    - From: claude-3-7-sonnet-20250219
    - To: claude-sonnet-4-20250514
 
-      or claude-opus-4-1-20250805
+     or claude-opus-4-1-20250805
 2. Your existing API calls will continue to work without modification, although API behavior has changed slightly in Claude 4 models (see [API release notes](/en/release-notes/api) for details).
 
 For more details, see [Migrating to Claude 4](/en/docs/about-claude/models/migrating-to-claude-4).
