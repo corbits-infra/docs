@@ -9,9 +9,11 @@ description: "Corbits features a collection of production ready libraries, tools
   **Faremeter v0.6.0** - The flagship x402 framework. Faremeter v0.6.0 sets the standard for adding new blockchains and APIs.
 </Tip>
 
+## Framework names
+
 <CardGroup cols={2}>
   <Card title="Faremeter 0.6.0" icon="trophy" href="/en/docs/about-claude/models/overview#model-comparison-table">
-    Our flagship x402 framework
+    The flagship x402 framework
 
     - <Icon icon="inbox-in" iconType="thin" /> Accept any form of payment
     - <Icon icon="inbox-out" iconType="thin" /> Proxy any API in the world
@@ -38,4 +40,140 @@ description: "Corbits features a collection of production ready libraries, tools
 | Triton | https://triton.api.corbits.dev |
 | Nansen | https://nansen.api.corbits.dev |
 
+---
+
 ## Client names
+
+<Tabs>
+  <Tab title="Crossmint">
+    ```typescript
+    import { createCrossmintWallet } from "@faremeter/wallet-crossmint";
+    import { createPaymentHandler } from "@faremeter/x-solana-settlement";
+    import { wrap as wrapFetch } from "@faremeter/fetch";
+    
+    const wallet = await createCrossmintWallet(
+      "devnet",
+      crossmintApi,
+      crossmintWallet,
+    );
+    const fetchWithPayer = wrapFetch(fetch, {
+      handlers: [createPaymentHandler(wallet)],
+    });
+    
+    const req = await fetchWithPayer(url);
+    ```
+  </Tab>
+  <Tab title="Ledger">
+    ```typescript
+    import {
+      createLedgerSolanaWallet,
+      selectLedgerAccount,
+      createReadlineInterface,
+    } from "@faremeter/wallet-ledger";
+    import { createPaymentHandler } from "@faremeter/x-solana-settlement";
+    import { wrap as wrapFetch } from "@faremeter/fetch";
+    
+    const ui = await createReadlineInterface(process);
+    
+    const selected = await selectLedgerAccount(ui, "solana", 5);
+    const ledgerWallet = await createLedgerSolanaWallet("devnet", selected!.path);
+    
+    const fetchWithPayer = wrapFetch(fetch, {
+      handlers: [createPaymentHandler(ledgerWallet)],
+    });
+    
+    const req = await fetchWithPayer(url);
+    await ledgerWallet.disconnect();
+    await ui.close();
+    ```
+  </Tab>
+  <Tab title="Squads">
+    ```typescript
+    import { clusterApiUrl, Connection } from "@solana/web3.js";
+    import { wrap as wrapFetch } from "@faremeter/fetch";
+    import { createSquadsWallet } from "@faremeter/wallet-solana-squads";
+    import { createPaymentHandler } from "@faremeter/x-solana-settlement";
+    
+    const network = "devnet";
+    const connection = new Connection(clusterApiUrl(network), "confirmed");
+    const wallet = await createSquadsWallet(
+      network,
+      connection,
+      keypair,
+      multisigPda,
+      squadMember,
+    );
+    
+    const fetchWithPayer = wrapFetch(fetch, {
+      handlers: [createPaymentHandler(wallet)],
+    });
+    
+    const req = await fetchWithPayer(url);
+    ```
+  </Tab>
+</Tabs>
+
+---
+
+## Blockchain names
+
+<Tabs>
+  <Tab title="Solana">
+    ```typescript
+    import { Connection, PublicKey } from "@solana/web3.js";
+    import { createLocalWallet } from "@faremeter/wallet-solana";
+    import { lookupKnownSPLToken } from "@faremeter/info/solana";
+    import {
+      createPaymentHandler,
+      lookupX402Network,
+    } from "@faremeter/payment-solana-exact";
+    import { wrap as wrapFetch } from "@faremeter/fetch";
+    import { clusterApiUrl } from "@solana/web3.js";
+    
+    const network = "devnet";
+    const x402Network = lookupX402Network(network);
+    const usdcInfo = lookupKnownSPLToken(network, "USDC")!;
+    const connection = new Connection(clusterApiUrl(network));
+    
+    const mint = new PublicKey(usdcInfo.address);
+    const wallet = await createLocalWallet(x402Network, keypair);
+    const fetchWithPayer = wrapFetch(fetch, {
+      handlers: [createPaymentHandler(wallet, mint, connection)],
+    });
+    
+    const req = await fetchWithPayer(url);
+    ```
+  </Tab>
+  <Tab title="Base">
+    ```typescript
+    import { createLocalWallet } from "@faremeter/wallet-evm";
+    import { createPaymentHandler } from "@faremeter/payment-evm";
+    import { wrap as wrapFetch } from "@faremeter/fetch";
+    
+    const wallet = await createLocalWallet("base-sepolia", localPrivateKey);
+    
+    const fetchWithPayer = wrapFetch(fetch, {
+      handlers: [createPaymentHandler(wallet)],
+    });
+    
+    const req = await fetchWithPayer(url);
+    ```
+  </Tab>
+</Tabs>
+
+<Note>
+  Don't see your preferred blockchain supported? Submit a PR or contact our team
+</Note>
+
+---
+
+## Protocol names
+
+<Tabs>
+  <Tab title="x402">
+    
+  </Tab>
+  <Tab title="Cloudflare">
+    
+  </Tab>
+</Tabs>
