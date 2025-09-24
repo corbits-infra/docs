@@ -30,9 +30,9 @@
           {
             "group": "Plugins & pricing",
             "pages": [
-              "about-corbits/facilitators/overview",
-              "about-corbits/facilitators/choosing-a-facilitator",
-              "about-corbits/facilitators/pricing"
+              "about-corbits/overview",
+              "about-corbits/choosing-a-facilitator",
+              "about-corbits/pricing"
             ]
           },
           {
