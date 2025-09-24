@@ -29,7 +29,7 @@
             ]
           },
           {
-            "group": "Plugins & Pricing",
+            "group": "Plugins & pricing",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "tab": "x402 Merchants",
+        "tab": "Merchants",
         "groups": [
           {
             "group": "API documentation",
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "tab": "x402 Clients",
+        "tab": "Clients",
         "groups": [
           {
             "group": "API documentation",
@@ -95,7 +95,7 @@
         ]
       },
       {
-        "tab": "x402 Facilitator",
+        "tab": "Facilitators",
         "groups": [
           {
             "group": "API documentation",
