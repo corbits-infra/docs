@@ -113,6 +113,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Release notes",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "release-notes/overview"
+            ]
+          },
+        ]
       }
     ],
     "global": {
