@@ -109,7 +109,9 @@
           {
             "group": "Overview",
             "pages": [
-              "release-notes/overview"
+              "release-notes/overview",
+              "release-notes/api",
+              "release-notes/faremeter"
             ]
           }
         ]
