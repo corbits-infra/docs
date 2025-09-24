@@ -147,12 +147,12 @@
       "anchors": [
         {
           "anchor": "Developer Guide",
-          "href": "https://mintlify.com/docs",
+          "href": "index",
           "icon": "book-open-cover"
         },
         {
           "anchor": "API Guide",
-          "href": "https://mintlify.com/blog",
+          "href": "/api/overview",
           "icon": "book-open-cover"
         }
       ]
