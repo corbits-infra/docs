@@ -159,7 +159,7 @@
     }
   },
   "logo": {
-    "light": "/logo/corbits_light.svg",
+    "light": "/logo/corbits_dark.png",
     "dark": "/logo/corbits_dark.png"
   },
   "navbar": {
