@@ -121,6 +121,17 @@
         ]
       },
       {
+        "tab": "Faremeter",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "faremeter"
+            ]
+          }
+        ]
+      },
+       {
         "tab": "Release notes",
         "groups": [
           {
