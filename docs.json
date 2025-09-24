@@ -11,6 +11,9 @@
     "light": "f7ead5",
     "dark": "2b2627"
   },
+  "font": {
+    "family": "Open Sans"
+  },
   "favicon": "/corbits_favicon.svg",
   "navigation": {
     "tabs": [
@@ -26,14 +29,14 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Plugins & Pricing",
             "pages": [
               "essentials/settings",
               "essentials/navigation"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "About x402",
             "pages": [
               "essentials/markdown",
               "essentials/code",
@@ -42,7 +45,7 @@
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Capabilities",
             "pages": [
               "ai-tools/cursor",
               "ai-tools/claude-code",
