@@ -147,12 +147,12 @@
       "anchors": [
         {
           "anchor": "Developer Guide",
-          "href": "index",
+          "href": "https://corbits.dev",
           "icon": "book-open-cover"
         },
         {
           "anchor": "API Guide",
-          "href": "/api/overview",
+          "href": "https://corbits.io",
           "icon": "book-open-cover"
         }
       ]
