@@ -43,6 +43,14 @@
               "about-x402/agents",
               "about-x402/facilitators"
             ]
+          },
+          {
+            "group": "About Corbits",
+            "pages": [
+              "about-corbits/overview",
+              "about-corbits/choosing-a-framework",
+              "about-corbits/pricing"
+            ]
           }
         ]
       },
