@@ -39,8 +39,8 @@
             "group": "About x402",
             "pages": [
               "about-x402/x402-overview",
-              "about-x402/buyers",
-              "about-x402/sellers",
+              "about-x402/merchants",
+              "about-x402/agents",
               "about-x402/facilitators"
             ]
           }
