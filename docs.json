@@ -23,7 +23,7 @@
           {
             "group": "First steps",
             "pages": [
-              "index",
+              "intro",
               "quickstart"
             ]
           },
@@ -45,9 +45,9 @@
             ]
           },
           {
-            "group": "About Corbits",
+            "group": "Learn about Corbits",
             "pages": [
-              "about-corbits/overview",
+              "about-corbits/features",
               "about-corbits/choosing-a-framework",
               "about-corbits/pricing"
             ]
