@@ -17,3 +17,11 @@ description: "A merchant (sometimes called a seller) is any party that offers di
 - **Sub-second settlement:** Receive finalized payments in under 1 second
 - **Composable, drop-in integration:** Keep your existing server stack and workflows. Just add x402 to existing routes/endpoints with minimal code.
 - **Discovery:** Your endpoints are automatically discoverable by programmatic buyers (AIs, agents, platforms), opening up additional revenue streams.
+
+## How merchants fit the payment flow
+
+1. The merchant advertises paid resources, detailing payment requirements and supported chains.
+2. When an agent requests access, the merchant middleware detects if payment is required and returns a structured `402 Payment Required` response.
+3. Upon receiving a payment proof, the merchant calls the facilitator to verify and settle the payment according to protocol standards.
+4. Once payment is confirmed, the merchant fulfills the resource request—delivering the API response, content, or data directly to the agent.
+5. All payment logic, verification, and blockchain settlement is orchestrated by the facilitator, enabling rapid and secure monetization for the merchant.

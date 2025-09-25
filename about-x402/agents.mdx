@@ -16,3 +16,11 @@ description: "An agent (sometimes called a client or buyer) is any party (human,
 - **Sub-second settlement:** Paid resources are unlocked instantly.
 - **Automatic payment handling:** Integrate with helper SDKs for seamless retries, header generation, and error recovery.
 - **Programmable discovery:** Agents can autonomously search, filter, and consume new paid APIs and digital services.
+
+## How agents fit the payment flow
+
+1. The agent (client, buyer, or autonomous bot) requests a resource (API endpoint or digital asset) from a merchant.
+2. If the resource is protected, the merchant responds with a `402 Payment Required` challenge, detailing payment terms and supported networks.
+3. The agent's x402-compatible client parses the challenge, constructs a payment payload, and initiates the payment using its configured wallet.
+4. The agent attaches proof of payment in the required header (typically `X-PAYMENT`) and retries the request.
+5. The merchant and facilitator verify and settle the payment on-chain, after which the agent receives access to the paid resource instantly.

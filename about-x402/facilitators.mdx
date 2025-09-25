@@ -1,0 +1,33 @@
+---
+title: "Facilitators"
+description: "A facilitator in the x402 protocol is a specialized service that verifies and settles payments between agents (buyers) and merchants (sellers). Facilitators abstract away the complexity of interacting with blockchain networks, allowing merchants to accept on-chain payments with minimal setup and without direct blockchain infrastructure"
+---
+
+## Core responsibilities of a facilitator
+
+- **Verify payments:** Validate incoming payment payloads from agents to ensure they meet the merchant’s price and criteria.
+- **Settle payments:** Submit verified transactions to the blockchain, monitor for confirmation, and update the merchant on completion.
+- **Protocol consistency:** Standardize the verification and settlement flow across different merchants and networks.
+- **Provide responses:** Return real-time verification and settlement results so merchants can fulfill requests confidently.
+- **Expose APIs:** Offer stable `/verify`, `/settle`, and `/list` endpoints for merchants and agents.
+
+---
+
+## Key benefits of using a facilitator
+
+- **Reduces operational complexity:** Merchants don’t need to maintain blockchain nodes or implement custom payment logic.
+- **Faster integration:** Onboarding is simple—just configure your middleware to point to a facilitator.
+- **Network flexibility:** Facilitators support multiple chains and tokens (Base, Solana, etc.), letting you reach more buyers.
+- **Fee-free settlements:** Leading facilitators (like CDP) offer USDC payments on Base with zero additional fees to merchants or agents.
+- **Service discovery:** Facilitators help agents programmatically discover available paid endpoints via standard APIs.
+- **Improved reliability:** Facilitator infrastructure is designed for high uptime, observability, and robust error handling.
+
+---
+
+## How facilitators fit the payment flow
+
+1. Agent calls a paid endpoint and receives a 402 Payment Required challenge.
+2. Merchant submits the agent’s payment payload and requirements to the facilitator’s `/verify` endpoint.
+3. Facilitator checks signatures, amounts, and nonces; returns a verification result.
+4. Merchant, when ready, sends a `/settle` request; facilitator submits the transaction on-chain and confirms.
+5. Once payment is settled, the merchant fulfills the request.
