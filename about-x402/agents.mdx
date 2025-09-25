@@ -1,3 +1,18 @@
 ---
 title: "Agents"
+description: "An agent (sometimes called a client or buyer) is any party (human, AI, bot, or app) that interacts with merchant endpoints which require payment. Agents programmatically discover, pay for, and unlock paid APIs and data on-chain, often with zero user intervention. This can include autonomous AI agents, browser extensions, apps, or traditional web clients."
 ---
+
+## Core responsibilities of an agent
+
+- **Discover payment requirements:** Interrogate endpoints to determine price, payment type, and supported networks using x402 standard responses.
+- **Create and authorize payment:** Using the agent’s wallet or configured payment method.
+- **Access paid resources:** Retry requests to paid endpoints, attaching payment headers, to unlock responses.
+- **Manage funds and keys:** Securely handle wallet credentials or API keys for authorized payment and access flows.
+
+## Key benefits for agents
+
+- **Universal compatibility:** Any HTTP client, any payment method, any merchant or network.
+- **Sub-second settlement:** Paid resources are unlocked instantly.
+- **Automatic payment handling:** Integrate with helper SDKs for seamless retries, header generation, and error recovery.
+- **Programmable discovery:** Agents can autonomously search, filter, and consume new paid APIs and digital services.
