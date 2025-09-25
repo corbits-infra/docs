@@ -47,17 +47,6 @@
         ]
       },
       {
-        "tab": "Faremeter",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "faremeter/overview"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Merchants",
         "groups": [
           {
@@ -101,6 +90,17 @@
         "tab": "Model Context Protocol (MCP)",
         "pages": [
           "agents-and-tools/mcp"
+        ]
+      },
+      {
+        "tab": "Faremeter",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "faremeter/overview"
+            ]
+          }
         ]
       },
       {
