@@ -18,6 +18,17 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Welcome",
+        "groups": [
+          {
+            "pages": [
+              "index"
+            ]
+          }
+        ]
+      },
+      
+      {
         "tab": "Corbits Developer Platform",
         "groups": [
           {
