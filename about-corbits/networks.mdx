@@ -4,33 +4,37 @@ description: "Explore available payment networks and blockchains supported by Co
 ---
 
 <Info>
-  Corbit's facilitator operates at `facilitator.corbits.*`
+  The Corbit's facilitator operates at `facilitator.corbits.<network_string>`
 </Info>
 
-| Network Name   | Network String                                              | Status                                                    |
-| -------------- | :---------------------------------------------------------- | :-------------------------------------------------------: |
-| Solana         | `solana`                                                    | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
-| Solana Devnet  | `solana-devnet`                                             | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
-| Base           | `base`                                                      | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
-| Base Sepolia   | `base-sepolia`                                              | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
-| Polygon        | `polygon`                                                   | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Ethereum       | `ethereum`                                                  | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| HyperEVM       | `hyperevm`                                                  | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Arbitrum       | `arbitrum`                                                  | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| BNB            | `bnb`                                                       | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| MegaETH        | `megaeth`                                                   | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Avalanche      | `avalanche-fuji`                                            | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Monad          | `monad`                                                     | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| SUI            | `sui`                                                       | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Tron           | `tron`                                                      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| SEI            | `sei`                                                       | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Apechain       | `apechain`                                                  | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Abstract Chain | `abstract`                                                  | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Aptos          | `aptos`                                                     | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Unichain       | `unichain`                                                  | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| Bitcoin        | `bitcoin`                                                   | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
-| EVMs           | Reach out to [support](mailto:support@corbits.dev) directly | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
-| SVMs           | Reach out to [support](mailto:support@corbits.dev) directly | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+| Network Name   | Network String                                              | Settlement | Status                                                    |
+| -------------- | :---------------------------------------------------------- | :--------: | :-------------------------------------------------------: |
+| Solana         | `solana`                                                    | 100ms      | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+| Solana Devnet  | `solana-devnet`                                             | 100ms      | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+| Base           | `base`                                                      | 2s         | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+| Base Sepolia   | `base-sepolia`                                              | 2s         | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+| Polygon        | `polygon`                                                   | 5s         | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Ethereum       | `ethereum`                                                  | 12s        | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| HyperEVM       | `hyperevm`                                                  | 200ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Arbitrum       | `arbitrum`                                                  | 2s         | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| BNB            | `bnb`                                                       | 1.9s       | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| MegaETH        | `megaeth`                                                   | 1.7s       | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Avalanche      | `avalanche-fuji`                                            | 2s         | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Monad          | `monad`                                                     | 1s         | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| SUI            | `sui`                                                       | 400ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Tron           | `tron`                                                      | 3s         | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| SEI            | `sei`                                                       | 400ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Apechain       | `apechain`                                                  | 250ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Abstract Chain | `abstract`                                                  | 390ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Aptos          | `aptos`                                                     | 650ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Unichain       | `unichain`                                                  | 250ms      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| Bitcoin        | `bitcoin`                                                   | 10min      | <Icon icon="circle" iconType="duotone" color="#7B9974" /> |
+| EVMs           | Reach out to [support](mailto:support@corbits.dev) directly | varies     | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+| SVMs           | Reach out to [support](mailto:support@corbits.dev) directly | varies     | <Icon icon="circle" iconType="solid" color="#7B9974" />   |
+
+<Note>
+  Blockchain settlement times may vary as networks undergo upgrades. Furthermore, it is important to consider the difference in block finality and confirmation times given your needs and use cases.
+</Note>
 
 ## Next steps
 
