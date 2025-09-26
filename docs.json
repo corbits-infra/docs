@@ -142,20 +142,24 @@
     }
   },
   "logo": {
-    "light": "/logo/corbits_dark.png",
-    "dark": "/logo/corbits_dark.png"
+    "light": "/logo/corbits_dark.svg",
+    "dark": "/logo/corbits_dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Home",
         "href": "https://corbits.dev"
+      },
+      {
+        "label": "Support",
+        "href": "https://t.me/+aO1q2ZZZmXkxNzU5"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Support",
-      "href": "https://t.me/+aO1q2ZZZmXkxNzU5"
+      "label": "Sign-up",
+      "href": "https://tally.so/r/nrZ1AN"
     }
   },
   "contextual": {
