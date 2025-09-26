@@ -103,17 +103,13 @@
       {
         "tab": "Model Context Protocol (MCP)",
         "pages": [
-          "host-with-faremeter/mcp"
+          "host-with-corbits/mcp"
         ]
       },
       {
         "tab": "Faremeter",
         "pages": [
-          
-            
-              "faremeter/overview"
-        
-          
+          "faremeter/overview"
         ]
       },
       {
