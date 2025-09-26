@@ -51,6 +51,12 @@
               "about-corbits/networks",
               "about-corbits/payments"
             ]
+          },
+          {
+            "group": "Legal center",
+            "pages": [
+              "https://github.com/faremeter/faremeter/blob/main/LICENSE"
+            ]
           }
         ]
       },
