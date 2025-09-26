@@ -153,6 +153,10 @@
       },
       {
         "label": "Support",
+        "href": "mailto:support@corbits.dev?subject=Corbits%20Docs%20Support"
+      },
+      {
+        "label": "Community",
         "href": "https://t.me/+aO1q2ZZZmXkxNzU5"
       }
     ],
