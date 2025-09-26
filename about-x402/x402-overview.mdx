@@ -35,7 +35,7 @@ At a high level:
 1. The buyer requests a resource from the server (e.g. an API call, see client/server roles)
 2. If payment is required, the server responds with a `402 Payment Required`, including payment instructions.
 3. The buyer constructs and sends a payment payload.
-4. The server verifies and settles the payment via a **facilitator**. If valid, the server returns the requested resource.
+4. The server verifies and settles the payment via a [facilitator](facilitators). If valid, the server returns the requested resource.
 
 ## Beyond legacy limitations
 
