@@ -60,7 +60,7 @@
           },
           {
             "group": "Legal center",
-            "pages": [
+            "href": [
               "https://github.com/faremeter/faremeter/blob/main/LICENSE"
             ]
           }
