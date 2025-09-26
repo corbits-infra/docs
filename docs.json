@@ -108,12 +108,12 @@
       },
       {
         "tab": "Faremeter",
-        "groups": [
-          {
-            "pages": [
+        "pages": [
+          
+            
               "faremeter/overview"
-            ]
-          }
+        
+          
         ]
       },
       {
