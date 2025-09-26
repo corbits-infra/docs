@@ -66,7 +66,7 @@
           {
             "group": "API documentation",
             "pages": [
-              "api-reference/introduction"
+              "build-with-corbits/merchants"
             ]
           },
           {
@@ -86,7 +86,7 @@
           {
             "group": "API documentation",
             "pages": [
-              "api-reference/introduction"
+              "build-with-corbits/agents"
             ]
           },
           {
