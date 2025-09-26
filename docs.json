@@ -16,18 +16,7 @@
   },
   "favicon": "logo/corbits_favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Welcome",
-        "groups": [
-          {
-            "pages": [
-              "home"
-            ]
-          }
-        ]
-      },
-      
+    "tabs": [      
       {
         "tab": "Corbits Developer Platform",
         "groups": [
