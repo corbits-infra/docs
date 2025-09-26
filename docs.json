@@ -64,16 +64,16 @@
         "tab": "Merchants",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting started",
             "pages": [
-              "build-with-corbits/merchants"
+              "host-with-corbits/overview"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Deployment",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
+              "host-with-corbits/endpoint/get",
+              "host-with-corbits/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
@@ -84,16 +84,16 @@
         "tab": "Agents",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Getting started",
             "pages": [
-              "build-with-corbits/agents"
+              "build-with-corbits/overview"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Build with Corbits",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
+              "build-with-corbits/endpoint/get",
+              "build-with-corbits/endpoint/create",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
@@ -103,7 +103,7 @@
       {
         "tab": "Model Context Protocol (MCP)",
         "pages": [
-          "mcp"
+          "host-with-faremeter/mcp"
         ]
       },
       {
