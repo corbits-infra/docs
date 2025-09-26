@@ -110,7 +110,6 @@
         "tab": "Faremeter",
         "groups": [
           {
-            "group": "Overview",
             "pages": [
               "faremeter/overview"
             ]
